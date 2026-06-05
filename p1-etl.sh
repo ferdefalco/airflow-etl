@@ -29,7 +29,7 @@ END{
     for(k in sum)
         printf "%s,%.2f\n", k, sum[k]
 }
-' /opt/airflow/dags/input_data.csv > /opt/airflow/dags/output_data.csv
+' /opt/airflow/dags/input_data.csv | sort -t',' -k1,1n -k2,2 > /opt/airflow/dags/output_data.csv
 
 # Compresses the output_data.csv file into a tar.gz file called p1-output.tar.gz, storing it in the /opt/airflow/dags directory
 
