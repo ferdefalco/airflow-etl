@@ -17,6 +17,8 @@ https://www.kaggle.com/datasets/ahmedmohamed2003/retail-store-sales-dirty-for-da
 
 ## Pipeline Architecture
 
-The Airflow DAG consists of two sequential tasks: first_step_et (Extraction and Transformation) > second_step_insert_sqlite (Loading in SQLite)
+The Airflow DAG consists of two sequential tasks: 
+1) first_step_et (Extraction and Transformation)
+2) second_step_insert_sqlite (Loading in SQLite)
 
-![ETL Pipeline Architecture](image.png)
+<img src="image.png" width="300" alt="ETL Pipeline Architecture">
